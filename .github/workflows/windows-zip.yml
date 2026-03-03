@@ -1,7 +1,9 @@
 name: Build Windows Package
 
 on:
-  workflow_call:
+  push:
+  pull_request:
+  release:
 
 jobs:
   build-windows-package:
